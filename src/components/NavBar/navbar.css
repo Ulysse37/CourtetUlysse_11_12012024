@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3% 5%;
+}
+
+a {
+  font-size: larger;
+  color: #FF6060;
+}

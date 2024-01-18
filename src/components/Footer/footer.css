@@ -1,4 +1,15 @@
 footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+footer img {
+  width: 130px;
+  align-self: center;
+}
+
+p {
+  color: white;
 }

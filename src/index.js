@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/';
 import About from './pages/About/';
 import Error from './pages/Error/';
+/* import Carousel from './pages/Carousel/'; */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 3% 5%;
+  margin: 1% 5%;
 }
 
 nav ul {
@@ -10,11 +10,32 @@ nav ul {
 }
 
 nav li {
-  margin-left: 20px;
+  margin-left: 10px;
+  font-size: 80%;
   list-style-type: none;
+  text-transform: uppercase;
 }
 
 nav a {
-  font-size: larger;
   color: #FF6060;
+}
+
+.navbar-logo {
+  width: 145px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin: 4% 5%;
+  }
+
+  nav li{
+    margin-left: 40px;
+    font-size: 120%;
+    text-transform: capitalize;
+  }
+
+  .navbar-logo {
+    width: 200px;
+  }
 }

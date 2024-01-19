@@ -2,14 +2,15 @@ body {
   text-align: center;
 }
 
-body h1, h2 {
+body a {
   color: #FF6060;
 }
 
-body h1 {
+.error-title {
+  color: #FF6060;
   font-size: 1000%;
 }
 
-body a {
+.error-subtitle {
   color: #FF6060;
 }

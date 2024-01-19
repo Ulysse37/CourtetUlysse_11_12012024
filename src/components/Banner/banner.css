@@ -1,5 +1,15 @@
+.banner-container {
+  position: relative;
+}
+
 .banner-img {
   max-width: 80%;
   max-height: 300px;
-  
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* color: white; */
 }

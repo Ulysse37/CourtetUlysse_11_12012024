@@ -5,7 +5,7 @@ import './navbar.css';
 function NavBar() {
   return (
     <nav>
-      <img class='navbar-logo' src={logo} alt='logo Kasa' />
+      <img className='navbar-logo' src={logo} alt='logo Kasa' />
       <ul>
         <li>
           <Link to="/">Accueil</Link>

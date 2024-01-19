@@ -1,18 +1,14 @@
-import NavBar from '../../components/NavBar/NavBar';
 import Banner from '../../components/Banner/Banner';
-import Footer from '../../components/Footer/Footer';
 import Collapse from '../../components/Collapse/Collapse';
 //import '../App.css';
 
-function App() {
+function About() {
   return (
-    <div className="App">
-      <NavBar />
+    <main>
       <Banner />
       <Collapse />
-      <Footer />
-    </div>
+    </main>
   );
 }
 
-export default App;
+export default About;

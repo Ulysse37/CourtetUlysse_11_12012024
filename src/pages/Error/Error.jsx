@@ -1,16 +1,15 @@
-import NavBar from '../../components/NavBar/NavBar';
-import Footer from '../../components/Footer/Footer';
-import Error from '../../components/Error/Error';
+import { Link } from 'react-router-dom'
+import './error.css';
 //import '../App.css';
 
-function App() {
+function Error() {
   return (
-    <div className="App">
-      <NavBar />
-      <Error />
-      <Footer />
-    </div>
+    <main>
+      <h1 className="error-title">404</h1>
+      <h2 className="error-subtitle">Oups! La page que vous demandez n'existe pas.</h2>
+      <Link to="/">Retournez sur la page d'accueil</Link>
+    </main>
   );
 }
 
-export default App;
+export default Error;

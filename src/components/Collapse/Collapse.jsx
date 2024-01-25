@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 function Collapse() {
-  const [selected, setSelected] = useState(null)
+  const [selectedItems, setSelectedItems] = useState([]);
 
   const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null)
+    if (selectedItems.includes(i)) {
+      setSelectedItems(selectedItems.filter(item => item !== i));
+    } else {
+      setSelectedItems([...selectedItems, i]);
     }
-
-    setSelected(i)
   }
 
   return (
@@ -23,10 +23,10 @@ function Collapse() {
             <div className='collapse-title'>
               <h3>{item.title}</h3>
               <span onClick={() => toggle(i)}>
-                {selected === i ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
+                {selectedItems.includes(i) ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
               </span>
             </div>
-            <div className={selected === i ? 'collapse-text show' : 'collapse-text' }>
+            <div className={selectedItems.includes(i) ? 'collapse-text show' : 'collapse-text' }>
               <p>{item.text}</p>
             </div>
           </div>

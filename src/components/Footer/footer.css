@@ -2,9 +2,10 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: black;
   align-items: center;
+  margin-top: 25px;
   max-height: 200px;
+  background-color: black;
 }
 
 footer img {

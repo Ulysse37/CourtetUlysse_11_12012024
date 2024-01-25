@@ -14,13 +14,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
   height: 45px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--main-red);
   color: white;
 }  
 
+.collapse-title h3 {
+  margin-left: 15px;
+}
+
+.collapse-title span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
 .collapse-text {
-  border-radius: 10px;
+  max-height: 0;
+  border-radius: 5px;
   background-color: #f0f0f0;
+  overflow: hidden;
 } 
+
+.collapse-text.show {
+  height: auto;
+  max-height: 250px;
+}

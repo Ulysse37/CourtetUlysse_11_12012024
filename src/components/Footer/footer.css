@@ -3,13 +3,35 @@ footer {
   justify-content: center;
   flex-direction: column;
   background-color: black;
+  align-items: center;
+  max-height: 200px;
 }
 
 footer img {
   width: 130px;
-  align-self: center;
+  margin-top: 10%;
 }
 
 p {
+  width: 120px;
+  margin-bottom: 10%;
+  white-space: wrap;
+  font-size:small;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    max-height: 220px;
+  }
+
+  footer img {
+    margin-top: 5%;
+  }
+
+  p {
+    margin-bottom: 5%;
+    white-space: nowrap;
+    width: 300px;
+  }
 }

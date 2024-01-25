@@ -1,11 +1,12 @@
 import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
+import AboutBanner from '../../assets/img-about.jpg';
 //import '../App.css';
 
 function About() {
   return (
     <main>
-      <Banner />
+      <Banner imageSrc={AboutBanner} text="" />
       <Collapse />
     </main>
   );

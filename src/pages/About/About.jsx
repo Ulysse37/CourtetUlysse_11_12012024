@@ -7,7 +7,7 @@ function About() {
   return (
     <main>
       <Banner imageSrc={AboutBanner} text="" />
-      <Collapse Title="Fiabilité" Text="Ayoo les fratés"/>
+      <Collapse />
     </main>
   );
 }

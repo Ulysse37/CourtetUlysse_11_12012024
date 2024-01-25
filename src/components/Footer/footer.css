@@ -12,7 +12,7 @@ footer img {
   margin-top: 10%;
 }
 
-p {
+footer p {
   width: 120px;
   margin-bottom: 10%;
   white-space: wrap;
@@ -29,7 +29,7 @@ p {
     margin-top: 5%;
   }
 
-  p {
+  footer p {
     margin-bottom: 5%;
     white-space: nowrap;
     width: 300px;

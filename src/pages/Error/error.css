@@ -3,14 +3,14 @@ body {
 }
 
 body a {
-  color: #FF6060;
+  color: var(--main-red);
 }
 
 .error-title {
-  color: #FF6060;
+  color: var(--main-red);
   font-size: 1000%;
 }
 
 .error-subtitle {
-  color: #FF6060;
+  color: var(--main-red);
 }

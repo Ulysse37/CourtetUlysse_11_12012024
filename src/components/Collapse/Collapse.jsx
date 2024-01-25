@@ -3,7 +3,7 @@ import { useState } from 'react';
 import collapseData from '../../assets/about.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
 function Collapse() {
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -23,7 +23,7 @@ function Collapse() {
             <div className='collapse-title'>
               <h3>{item.title}</h3>
               <span onClick={() => toggle(i)}>
-                {selectedItems.includes(i) ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
+                <FontAwesomeIcon icon={faChevronUp} className={selectedItems.includes(i) ? 'chevronIcon open' : 'chevronIcon'} />
               </span>
             </div>
             <div className={selectedItems.includes(i) ? 'collapse-text show' : 'collapse-text' }>

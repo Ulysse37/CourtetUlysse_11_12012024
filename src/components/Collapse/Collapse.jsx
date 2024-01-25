@@ -1,8 +1,9 @@
 import './collapse.css';
 
-function Collapse() {
+function Collapse({ Title, Text }) {
   return (
-    <h1>Collapse test</h1>
+    <section className='wrapper'>azd
+    </section>
   )
 }
 

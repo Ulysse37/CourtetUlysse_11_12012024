@@ -17,7 +17,7 @@ root.render(
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/About" element={<About />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

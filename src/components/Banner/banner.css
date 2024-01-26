@@ -16,6 +16,8 @@
 
 .banner-text {
   position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 140%;
   color: white;
 }

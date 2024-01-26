@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 1% 5%;
+  margin: 6% 5% 0% 5%;
 }
 
 nav ul {
@@ -12,24 +12,37 @@ nav ul {
 nav li {
   margin-left: 10px;
   font-size: 69%;
+  font-weight: 500;
   list-style-type: none;
   text-transform: uppercase;
 }
 
 nav a {
   color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  text-decoration: underline;
 }
 
 .navbar-logo {
   width: 145px;
 }
 
+.accueil-link {
+  padding-right: 7px;
+}
+
 @media screen and (min-width: 768px) {
   nav {
-    margin: 4% 5%;
+    margin: 3% 5% 0% 5%;
   }
-
-  nav li{
+  nav li {
     margin-left: 40px;
     font-size: 120%;
     text-transform: capitalize;

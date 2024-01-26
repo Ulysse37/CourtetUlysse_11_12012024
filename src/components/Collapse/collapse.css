@@ -19,11 +19,11 @@
 }  
 
 .collapse-title h3 {
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .collapse-title span {
-  margin-right: 15px;
+  padding-right: 15px;
   cursor: pointer;
 }
 
@@ -38,6 +38,7 @@
 .collapse-text {
   max-height: 0;
   border-radius: 5px;
+  padding: 0 15px;
   background-color: #f0f0f0;
   overflow: hidden;
 } 
@@ -48,3 +49,13 @@
   transition: max-height 0.7s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .accordion {
+    width: 85%;
+  }
+}

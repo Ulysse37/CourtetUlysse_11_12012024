@@ -27,4 +27,7 @@
   .banner-img {
     height: 220px;
   }
+  .banner-text {
+    font-size: 200%;
+  }
 }

@@ -1,16 +1,35 @@
-body {
+.error-main {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
   text-align: center;
-}
-
-body a {
-  color: var(--main-red);
 }
 
 .error-title {
   color: var(--main-red);
-  font-size: 1000%;
+  font-size: 600%;
 }
 
 .error-subtitle {
+  margin: 40px 50px;
   color: var(--main-red);
+  font-size: larger;
+  font-weight: normal;
 }
+
+.error-link {
+  margin: 60px 0;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .error-title {
+    margin: 20px 0;
+    font-size: 1000%;
+  }
+  .error-subtitle {
+    font-size: larger;
+  }
+}
+

@@ -19,7 +19,7 @@ function Collapse() {
     <section className='wrapper'>
       <div className='accordion'>
         {collapseData.map((item, i) => (
-          <div className='item'>
+          <div className='item' key={i}>
             <div className='collapse-title'>
               <h3>{item.title}</h3>
               <span onClick={() => toggle(i)}>

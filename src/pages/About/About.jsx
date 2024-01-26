@@ -6,7 +6,7 @@ import AboutBanner from '../../assets/img-about.jpg';
 function About() {
   return (
     <main>
-      <Banner imageSrc={AboutBanner} text="" />
+      <Banner imageSrc={AboutBanner} imageAlt="Un glacier avec des montagnes" />
       <Collapse />
     </main>
   );

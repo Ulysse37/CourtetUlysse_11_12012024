@@ -4,7 +4,7 @@ import homeBanner from '../../assets/IMG.png';
 function Home() {
   return (
     <main>
-      <Banner imageSrc={homeBanner} text="Chez vous, partout et ailleurs" />
+      <Banner imageSrc={homeBanner} imageAlt="Falaise au dessus de l'océan" text="Chez vous, partout et ailleurs" />
     </main>
   );
 }

@@ -9,6 +9,7 @@
 .error-title {
   color: var(--main-red);
   font-size: 600%;
+  font-weight: 700;
 }
 
 .error-subtitle {

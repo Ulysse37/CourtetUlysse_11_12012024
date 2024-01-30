@@ -2,13 +2,14 @@ import Banner from '../../components/Banner/Banner';
 import homeBanner from '../../assets/IMG.png';
 import Card from '../../components/Card/Card'
 import data from '../../assets/logements.json';
+import './home.css';
 
 function Home() {
-  //console.log(data);
+
   return (
     <main>
       <Banner imageSrc={homeBanner} imageAlt="Falaise au dessus de l'océan" text="Chez vous, partout et ailleurs" />
-      <div className='card-container'>
+      <article className='card-container'>
         {data.map((accomodation) => (
           <Card 
             key={accomodation.id}
@@ -17,7 +18,7 @@ function Home() {
             cover={accomodation.cover}
            /> 
         ))}
-      </div>
+      </article>
     </main>
   );
 }

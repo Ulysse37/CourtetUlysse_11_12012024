@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
-function CollapseItem({ title, text }) {
+function Collapse({ title, text }) {
   const [selected, setselected] = useState(false);
 
   return (
@@ -20,4 +20,4 @@ function CollapseItem({ title, text }) {
   )
 }
 
-export default CollapseItem;
+export default Collapse;

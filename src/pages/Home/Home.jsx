@@ -15,7 +15,6 @@ function Home() {
             id={accomodation.id}
             title={accomodation.title}
             cover={accomodation.cover}
-            /* onClick={() => handleCardClick(accomodation.id)} */
            /> 
         ))}
       </div>

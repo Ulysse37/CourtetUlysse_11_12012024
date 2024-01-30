@@ -1,39 +1,35 @@
 import './collapse.css';
 import { useState } from 'react';
-import collapseData from '../../assets/about.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
-function Collapse() {
-  const [selectedItems, setSelectedItems] = useState([]);
-
-  const toggle = (i) => {
-    if (selectedItems.includes(i)) {
-      setSelectedItems(selectedItems.filter(item => item !== i));
-    } else {
-      setSelectedItems([...selectedItems, i]);
-    }
-  }
+function CollapseItem({ title, text }) {
+  const [selected, setselected] = useState(false);
 
   return (
-    <section className='wrapper'>
+    <article>
+      <section className='collapse-title' onClick={() => setselected(!selected)}>
+        <h3>{title}</h3>
+        <span><FontAwesomeIcon icon={faChevronUp} className={selected ? 'chevronIcon open' : 'chevronIcon'} />
+        </span>
+      </section>
+      <aside className={selected ? "collapse-text show" : "collapse-text"}>
+        <p>{text}</p>
+      </aside>
+    </article>
+  )
+}
+
+function Collapse({ data }) {
+  return (
+    <article className='wrapper'>
       <div className='accordion'>
-        {collapseData.map((item, i) => (
-          <div className='item' key={i}>
-            <div className='collapse-title'>
-              <h3>{item.title}</h3>
-              <span onClick={() => toggle(i)}>
-                <FontAwesomeIcon icon={faChevronUp} className={selectedItems.includes(i) ? 'chevronIcon open' : 'chevronIcon'} />
-              </span>
-            </div>
-            <div className={selectedItems.includes(i) ? 'collapse-text show' : 'collapse-text' }>
-              <p>{item.text}</p>
-            </div>
-          </div>
+        {data.map((item, i) => (
+          <CollapseItem key={i} title={item.title} text={item.text} />
         ))}
       </div>
-    </section>
-  )
+    </article>
+  );
 }
 
 export default Collapse;

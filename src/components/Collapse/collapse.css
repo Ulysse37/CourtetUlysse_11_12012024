@@ -1,11 +1,4 @@
-.wrapper {
-  margin: 3% 5%;
-}
 
-.accordion {
-  width: 100%;
-  text-align: left;
-}
 
 .collapse-title  {
   display: flex;
@@ -47,15 +40,4 @@
   height: auto;
   max-height: 1000px;
   transition: max-height 0.7s ease;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .accordion {
-    width: 85%;
-  }
 }

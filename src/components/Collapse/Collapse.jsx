@@ -20,16 +20,4 @@ function CollapseItem({ title, text }) {
   )
 }
 
-function Collapse({ data }) {
-  return (
-    <article className='wrapper'>
-      <div className='accordion'>
-        {data.map((item, i) => (
-          <CollapseItem key={i} title={item.title} text={item.text} />
-        ))}
-      </div>
-    </article>
-  );
-}
-
-export default Collapse;
+export default CollapseItem;

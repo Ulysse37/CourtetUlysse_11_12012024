@@ -14,6 +14,10 @@ function Accomodation() {
       <Carousel 
           title={accomodation.title}
           pictures={accomodation.pictures}/> 
+      <section className="accomodation-title">
+        <h1>{accomodation.title}</h1>
+        <p>{accomodation.location}</p>
+      </section>
     </main>
   );
 }

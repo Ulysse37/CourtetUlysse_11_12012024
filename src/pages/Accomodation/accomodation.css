@@ -1,0 +1,14 @@
+.accomodation-title {
+  margin: 0% 5%;
+}
+
+.accomodation-title h1 {
+  margin: 0px 0px 7px 0;
+  font-weight: 500;
+  color: var(--main-red);
+}
+
+.accomodation-title p {
+  margin: 0;
+  font-weight: 500;
+}

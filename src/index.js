@@ -9,7 +9,6 @@ import About from './pages/About/About';
 import Error from './pages/Error/Error';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-/* import Carousel from './pages/Carousel/'; */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

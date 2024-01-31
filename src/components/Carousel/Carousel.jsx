@@ -17,12 +17,12 @@ function Carousel({ title, pictures }) {
   };
 
   return (
-    <article className='carousel'>
-      <figure>
-        <span onClick={previousSlide}><FontAwesomeIcon icon={faChevronLeft} /></span>
-        <img src={pictures[currentSlide]} alt={title}></img>
-        <span onClick={nextSlide}><FontAwesomeIcon icon={faChevronRight} /></span>
-        <figcaption>{title}</figcaption>
+    <article className='carousel-container'>
+      <figure className='carousel-figure'>
+        <span className='carousel-span' onClick={previousSlide}><FontAwesomeIcon icon={faChevronLeft} /></span>
+        <img src={pictures[currentSlide]} alt={title} className='carousel-img'></img>
+        <span className='carousel-span carousel-span-right' onClick={nextSlide}><FontAwesomeIcon icon={faChevronRight} /></span>
+        <figcaption className='carousel-figcaption'>{currentSlide + 1} / {pictures.length}</figcaption>
       </figure>
     </article>
   )

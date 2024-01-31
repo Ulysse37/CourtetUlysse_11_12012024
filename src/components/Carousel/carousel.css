@@ -1,0 +1,49 @@
+.carousel-figure {
+  position: relative;
+  display: flex;
+  margin: 3% 5%;
+}
+
+.carousel-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  min-height: 215px;
+  max-height: 420px;
+}
+.carousel-span {
+  position: absolute;
+  top: 50%;
+  margin: 0% 2%;
+  color: white;
+  cursor: pointer;
+}
+.carousel-span-right {
+  right: 0;
+}
+
+.carousel-figcaption {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-figcaption {
+    display: block;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .carousel-span {
+    font-size: 200%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-span {
+    top: 40%;
+    font-size: 400%;
+  }
+}

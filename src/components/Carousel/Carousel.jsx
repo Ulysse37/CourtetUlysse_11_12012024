@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './carousel.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 function Carousel({ title, pictures }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,9 +19,9 @@ function Carousel({ title, pictures }) {
   return (
     <article className='carousel'>
       <figure>
-        <button onClick={previousSlide}>Previous</button>
+        <span onClick={previousSlide}><FontAwesomeIcon icon={faChevronLeft} /></span>
         <img src={pictures[currentSlide]} alt={title}></img>
-        <button onClick={nextSlide}>Next</button>
+        <span onClick={nextSlide}><FontAwesomeIcon icon={faChevronRight} /></span>
         <figcaption>{title}</figcaption>
       </figure>
     </article>

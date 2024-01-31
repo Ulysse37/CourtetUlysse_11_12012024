@@ -1,3 +1,5 @@
+import './accomodation.css';
+
 function Accomodation() {
 
   return (

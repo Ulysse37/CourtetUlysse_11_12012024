@@ -5,9 +5,10 @@ import data from '../../assets/logements.json';
 import  Carousel from '../../components/Carousel/Carousel'
 
 function Accomodation() {
-  let { id } = useParams();
+  const { id } = useParams();
   
-  const accomodation = data.find(item => item.id ===id);
+  const accomodation = data.find(item => item.id === id); // trouve le logement correspondant à l'id 
+  
   return (
     <main>
       <Carousel 

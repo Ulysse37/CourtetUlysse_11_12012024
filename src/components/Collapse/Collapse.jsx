@@ -8,9 +8,9 @@ function Collapse({ title, text }) {
 
   return (
     <article>
-      <section className='collapse-title' onClick={() => setselected(!selected)}>
+      <section className='collapse-title'>
         <h3>{title}</h3>
-        <span><FontAwesomeIcon icon={faChevronUp} className={selected ? 'chevronIcon open' : 'chevronIcon'} />
+        <span onClick={() => setselected(!selected)}><FontAwesomeIcon icon={faChevronUp} className={selected ? 'chevronIcon open' : 'chevronIcon'} />
         </span>
       </section>
       <aside className={selected ? "collapse-text show" : "collapse-text"}>

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import data from '../../assets/logements.json';
 import Carousel from '../../components/Carousel/Carousel'
 import Tag from '../../components/Tag/Tag';
+import Host from '../../components/Host/Host';
 
 function Accomodation() {
   const { id } = useParams();
@@ -12,8 +13,8 @@ function Accomodation() {
   return (
     <main>
       <Carousel 
-          title={accomodation.title}
-          pictures={accomodation.pictures}/> 
+        title={accomodation.title}
+        pictures={accomodation.pictures}/> 
       <section className="accomodation-title">
         <h1>{accomodation.title}</h1>
         <p>{accomodation.location}</p>
@@ -25,6 +26,11 @@ function Accomodation() {
         ))}
         </ul>
       </aside>
+      <article>
+        <Host 
+          name={accomodation.host.name}
+          picture={accomodation.host.picture}/>
+      </article>
     </main>
   );
 }

@@ -3,7 +3,7 @@ import './tag.css';
 function Tag( { tag } ) {
 
   return (
-    <li>{tag}</li>
+    <li className='tag-element'>{tag}</li>
   )
 }
 

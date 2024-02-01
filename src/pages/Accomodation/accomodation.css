@@ -11,4 +11,16 @@
 .accomodation-title p {
   margin: 0;
   font-weight: 500;
+  color: var(--main-red)
+}
+
+.tag-container {
+  margin: 0% 5%;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }

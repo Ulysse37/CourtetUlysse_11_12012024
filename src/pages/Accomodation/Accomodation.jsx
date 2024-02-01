@@ -1,8 +1,7 @@
 import './accomodation.css';
-/* import { useState, useEffect } from 'react'; */
 import { useParams } from 'react-router-dom'; 
 import data from '../../assets/logements.json';
-import  Carousel from '../../components/Carousel/Carousel'
+import Carousel from '../../components/Carousel/Carousel'
 import Tag from '../../components/Tag/Tag';
 
 function Accomodation() {
@@ -19,8 +18,8 @@ function Accomodation() {
         <h1>{accomodation.title}</h1>
         <p>{accomodation.location}</p>
       </section>
-      <aside>
-        <ul>
+      <aside className="tag-container">
+        <ul className='tag-list'>
         {accomodation.tags.map((tag, index) => (
           <Tag key={index} tag={tag}/>
         ))}

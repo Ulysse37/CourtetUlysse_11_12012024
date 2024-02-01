@@ -1,0 +1,12 @@
+.tag-element {
+  min-width: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 2px 15px;
+  border-radius: 10px;
+  background-color: var(--main-red);
+  list-style-type: none;
+  text-align: center;
+  font-size:smaller;
+  color: white;
+}

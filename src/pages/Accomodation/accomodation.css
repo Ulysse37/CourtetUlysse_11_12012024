@@ -24,3 +24,22 @@
   margin: 0;
   padding: 0;
 }
+
+/* Style du rating et photo / nom de l'hôte */
+.host-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 5%;
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.full-star {
+  color: var(--main-red);
+}
+
+.empty-star {
+  color: rgb(221, 221, 221);
+}

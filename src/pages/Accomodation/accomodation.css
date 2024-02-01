@@ -34,6 +34,7 @@
 
 .rating {
   margin-top: 20px;
+  /* font-size: 100%; */
 }
 
 .full-star {
@@ -42,4 +43,31 @@
 
 .empty-star {
   color: rgb(221, 221, 221);
+}
+
+aside svg {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .information-container {
+    position: relative;
+  }
+
+  .host-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+  }
+
+  .rating {
+    margin: 0;
+    font-size: 120%
+  }
+
+  aside svg {
+    margin-right: 10px;
+  }
 }

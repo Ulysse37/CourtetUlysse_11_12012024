@@ -6,6 +6,7 @@ import Tag from '../../components/Tag/Tag';
 import Host from '../../components/Host/Host';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import Collapse from '../../components/Collapse/Collapse';
 
 function Accomodation() {
   const { id } = useParams();
@@ -43,6 +44,15 @@ function Accomodation() {
           <Host 
             name={accomodation.host.name}
             picture={accomodation.host.picture}/>
+        </article>
+        <article className='accomodation-collapse-container'>
+          <Collapse 
+            title="Description"
+            text={accomodation.description}
+            className="accomodation-collapse"/>
+          <Collapse 
+            title="Équipement"
+            text={accomodation.equipments}/>
         </article>
       </article>
     </main>

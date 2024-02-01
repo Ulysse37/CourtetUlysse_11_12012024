@@ -34,7 +34,6 @@
 
 .rating {
   margin-top: 20px;
-  /* font-size: 100%; */
 }
 
 .full-star {
@@ -43,6 +42,11 @@
 
 .empty-star {
   color: rgb(221, 221, 221);
+}
+
+/* Style des collapse */
+.accomodation-collapse-container {
+  margin: 0% 5%;
 }
 
 aside svg {

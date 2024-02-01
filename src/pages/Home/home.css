@@ -9,5 +9,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0% 7%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
   }
 }

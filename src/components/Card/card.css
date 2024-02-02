@@ -1,6 +1,10 @@
+.card {
+  width: 100%;
+}
+
 .card-figure {
   position: relative;
-  margin: 3% 5%;
+  margin: 0;
 }
 
 .card-img {
@@ -22,13 +26,13 @@
 
 @media screen and (min-width: 768px) {
   .card {
-    flex: 0 0 calc(50% - 10px);
+    width : calc((100% - 40px) / 2);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    flex: 0 0 calc(33.3% - 10px);
+    width : calc((100% - 80px) / 3);
   }
   .card-img {
     height: 280px;

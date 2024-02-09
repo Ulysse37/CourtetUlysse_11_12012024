@@ -5,10 +5,10 @@ function Host( { name, picture } ) {
   const [firstName, lastName] = name.split(' ');
 
   return (
-    <aside className='host-info-container'>
-      <p className='host-name'>{firstName} <br /> {lastName}</p>
+    <figure className='host-info-container'>
+      <figcaption className='host-name'>{firstName} <br /> {lastName}</figcaption>
       <img className='host-img' src={picture} alt={"photo de " + name}></img>
-    </aside>
+    </figure>
   )
 }
 

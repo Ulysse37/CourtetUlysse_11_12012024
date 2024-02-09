@@ -17,16 +17,16 @@ function Collapse({ title, text, className }) {
   }
 
   return (
-    <article className={className}>
-      <section className='collapse-title'>
+    <section className={className}>
+      <header className='collapse-title'>
         <h3>{title}</h3>
         <span onClick={() => setselected(!selected)}><FontAwesomeIcon icon={faChevronUp} className={selected ? 'chevronIcon open' : 'chevronIcon'} />
         </span>
-      </section>
+      </header>
       <aside className={selected ? "collapse-text show" : "collapse-text"}>
         {content}
       </aside>
-    </article>
+    </section>
   )
 }
 

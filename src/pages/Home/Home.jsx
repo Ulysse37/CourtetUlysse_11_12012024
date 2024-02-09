@@ -9,16 +9,16 @@ function Home() {
   return (
     <main>
       <Banner imageSrc={homeBanner} imageAlt="Falaise au dessus de l'océan" text="Chez vous, partout et ailleurs" />
-      <article className='card-container'>
+      <figure className='card-container'>
         {data.map((accomodation) => (
           <Card 
             key={accomodation.id}
             id={accomodation.id}
             title={accomodation.title}
             cover={accomodation.cover}
-           /> 
+          /> 
         ))}
-      </article>
+      </figure>
     </main>
   );
 }

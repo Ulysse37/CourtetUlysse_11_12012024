@@ -6,7 +6,7 @@ function Error() {
   return (
     <main className='error-main'>
       <h1 className="error-title">404</h1>
-      <h2 className="error-subtitle">Oups! La page que vous demandez n'existe pas.</h2>
+      <p className="error-subtitle">Oups! La page que vous demandez n'existe pas.</p>
       <Link to="/" className='error-link'>Retournez sur la page d'accueil</Link>
     </main>
   );

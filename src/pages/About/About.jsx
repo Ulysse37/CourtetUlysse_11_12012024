@@ -8,13 +8,11 @@ function About() {
   return (
     <main>
       <Banner imageSrc={AboutBanner} imageAlt="Un glacier avec des montagnes" />
-      <article className='wrapper'>
-        <div className='accordion'>
-          {collapseData.map((item, i) => (
-            <Collapse key={i} title={item.title} text={item.text} />
-          ))}
-        </div>
-      </article>
+      <div className='wrapper'>
+        {collapseData.map((item, i) => (
+          <Collapse key={i} title={item.title} text={item.text} />
+        ))}  
+      </div>
     </main>
   );
 }

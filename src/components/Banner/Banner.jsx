@@ -2,10 +2,10 @@ import './banner.css';
 
 function Banner({ imageSrc, imageAlt, text="" }) {
   return (
-    <div className="banner-container">
+    <header className="banner-container">
       <img className="banner-img" src={imageSrc} alt={imageAlt} />
-      <h2 className="banner-text">{text}</h2>
-    </div>
+      <blockquote className="banner-text">{text}</blockquote>
+    </header>
   )
 }
 

@@ -39,3 +39,23 @@
   max-height: 1000px;
   transition: max-height 1s ease;
 }
+
+/* style collapse page accomodation */
+.accomodation-descr {
+  color: var(--main-red);
+}
+
+.accomodation-equip {
+  color: var(--main-red);
+  line-height: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .accomodation-descr {
+    width: 45%;
+  }
+
+  .accomodation-equip {
+    width: 45%;
+  }
+}

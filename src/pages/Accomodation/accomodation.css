@@ -49,16 +49,6 @@ figure svg {
   margin: 0% 5%;
 }
 
-.accomodation-descr {
-  color: var(--main-red);
-}
-
-.accomodation-equip {
-  color: var(--main-red);
-  line-height: 5px;
-}
-
-
 @media screen and (min-width: 768px) {
   .information-container {
     position: relative;
@@ -84,13 +74,5 @@ figure svg {
   .accomodation-collapse-container{
     display: flex;
     justify-content: space-between;
-  }
-  
-  .accomodation-descr {
-    width: 45%;
-  }
-
-  .accomodation-equip {
-    width: 45%;
   }
 }

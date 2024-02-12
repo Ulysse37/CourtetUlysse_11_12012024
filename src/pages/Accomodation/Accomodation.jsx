@@ -28,11 +28,7 @@ function Accomodation() {
           <h1>{accomodation.title}</h1>
           <p>{accomodation.location}</p>
         </header>
-        <ul className='tag-list'>
-          {accomodation.tags.map((tag, index) => (
-            <Tag key={index} tag={tag}/>
-          ))}
-        </ul>
+        <Tag tags={accomodation.tags} />
         <div className='host-container'>
           <figure className="rating">
             {[...Array(5)].map((_, index) => (

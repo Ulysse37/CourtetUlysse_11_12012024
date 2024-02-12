@@ -1,10 +1,14 @@
 import './tag.css';
 
-function Tag( { tag } ) {
-
+function Tag({ tags }) {
+  
   return (
-    <li className='tag-element'>{tag}</li>
-  )
+    <ul className='tag-list'>
+      {tags.map((tag, index) => (
+        <li key={index} className='tag-element'>{tag}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default Tag;

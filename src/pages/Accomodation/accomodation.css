@@ -14,13 +14,6 @@
   color: var(--main-red)
 }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 5%;
-  padding: 0;
-}
-
 /* Style du rating et photo / nom de l'hôte */
 .host-container {
   display: flex;

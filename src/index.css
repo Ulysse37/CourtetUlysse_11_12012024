@@ -2,7 +2,9 @@
 
 :root {
   --main-red: #ff6060;
-  --global-margin: 20px;
+  --global-phone-margin: 20px;
+  --global-tablet-margin: 45px;
+  --global-desktop-margin: 80px;
 }
 
 body {

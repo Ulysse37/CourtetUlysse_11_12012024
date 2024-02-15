@@ -1,6 +1,6 @@
 .banner-container {
   position: relative;
-  margin: 8% 5%;
+  margin: 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 768px) {
   .banner-container {
-    margin: 40px 5%;
+    margin: 40px 40px;
   }
   .banner-img {
     height: 220px;

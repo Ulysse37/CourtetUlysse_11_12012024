@@ -1,7 +1,7 @@
 .carousel-figure {
   position: relative;
   display: flex;
-  margin: 2% 5%;
+  margin: 10px 20px;
 }
 
 .carousel-img {
@@ -13,7 +13,7 @@
 .carousel-span {
   position: absolute;
   top: 50%;
-  margin: 0% 2%;
+  margin: 0px 10px;
   color: white;
   cursor: pointer;
 }
@@ -29,6 +29,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .carousel-figure {
+    margin: 20px 40px;
+  }
+
   .carousel-img {
     height: 325px;
   }

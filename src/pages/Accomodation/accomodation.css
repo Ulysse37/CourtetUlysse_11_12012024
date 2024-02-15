@@ -1,9 +1,9 @@
 .accomodation-title {
-  margin: 0% 5%;
+  margin: 0px 20px;
 }
 
 .accomodation-title h1 {
-  margin: 0px 0px 7px 0;
+  margin: 0px 0px 7px 0px;
   font-weight: 500;
   color: var(--main-red);
 }
@@ -18,7 +18,7 @@
 .host-container {
   display: flex;
   justify-content: space-between;
-  margin: 1% 5%;
+  margin: 5px 20px;
 }
 
 .rating {
@@ -39,10 +39,14 @@ figure svg {
 
 /* Style des collapse */
 .accomodation-collapse-container {
-  margin: 0% 5%;
+  margin: 0px 20px;
 }
 
 @media screen and (min-width: 768px) {
+  .accomodation-title {
+    margin: 0px 40px;
+  }
+
   .information-container {
     position: relative;
   }
@@ -51,6 +55,7 @@ figure svg {
     display: flex;
     flex-direction: column-reverse;
     position: absolute;
+    margin: 5px 40px;
     bottom: -5px;
     right: -10px;
   }
@@ -67,5 +72,6 @@ figure svg {
   .accomodation-collapse-container{
     display: flex;
     justify-content: space-between;
+    margin: 0px 40px;
   }
 }

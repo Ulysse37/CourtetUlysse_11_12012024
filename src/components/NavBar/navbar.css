@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 6% 5% 0% 5%;
+  margin: 25px 20px 0 20px;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav a.active {
 
 @media screen and (min-width: 768px) {
   nav {
-    margin: 3% 5% 0% 5%;
+    margin: 35px 40px 0px 40px;
   }
   nav li {
     margin-left: 40px;

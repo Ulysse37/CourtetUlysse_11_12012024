@@ -1,0 +1,61 @@
+.collapse-title  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: var(--main-red);
+  color: white;
+}  
+
+.collapse-title h3 {
+  padding-left: 15px;
+}
+
+.collapse-title span {
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.chevronIcon {
+  transition: transform 0.3s ease;
+}
+
+.chevronIcon.open {
+  transform: rotate(-180deg);
+}
+
+.collapse-text {
+  max-height: 0;
+  border-radius: 5px;
+  padding: 0 15px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+} 
+
+.collapse-text.show {
+  height: auto;
+  max-height: 1000px;
+  transition: max-height 1s ease;
+}
+
+/* style collapse page accomodation */
+.accomodation-descr {
+  color: black;
+}
+
+.accomodation-equip {
+  color: black;
+  line-height: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .accomodation-descr {
+    width: 45%;
+  }
+
+  .accomodation-equip {
+    width: 45%;
+  }
+}

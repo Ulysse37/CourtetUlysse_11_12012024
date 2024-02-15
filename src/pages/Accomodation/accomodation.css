@@ -1,0 +1,86 @@
+.accomodation-title {
+  margin: 0px 20px;
+}
+
+.accomodation-title h1 {
+  margin: 0px 0px 7px 0px;
+  font-weight: 500;
+  color: var(--main-red);
+}
+
+.accomodation-title p {
+  margin: 0;
+  font-weight: 500;
+  color: black;
+}
+
+/* Style du rating et photo / nom de l'hôte */
+.host-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.full-star {
+  color: var(--main-red);
+}
+
+.empty-star {
+  color: rgb(221, 221, 221);
+}
+
+figure svg {
+  margin-right: 5px;
+}
+
+/* Style des collapse */
+.accomodation-collapse-container {
+  margin: 0px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .accomodation-title {
+    max-width: 470px;
+    margin: 0px 40px;
+    margin-bottom: 50px;
+    order: 1;
+  }
+
+  .host-container {
+    order: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -5px; 
+    margin-right: 40px; 
+  }
+
+  .rating {
+    font-size: 120%
+  }
+
+  figure svg {
+    margin-right: 10px;
+  }
+  /* Style des collapse */
+  .accomodation-collapse-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accomodation-title {
+    max-width: 100%;
+  }
+}

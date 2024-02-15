@@ -42,11 +42,11 @@
 
 /* style collapse page accomodation */
 .accomodation-descr {
-  color: var(--main-red);
+  color: black;
 }
 
 .accomodation-equip {
-  color: var(--main-red);
+  color: black;
   line-height: 5px;
 }
 

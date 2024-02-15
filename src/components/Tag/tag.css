@@ -14,6 +14,8 @@
 .tag-list {
   display: flex;
   flex-wrap: wrap;
+  order: 3;
+  flex: 0 0 100%; /* Largeur fixe à 100% pour forcer l'élément à passer à la ligne suivante */
   margin: 0 20px;
   padding: 0;
 }
@@ -21,5 +23,7 @@
 @media screen and (min-width: 768px) {
   .tag-list {
     margin: 0 40px;
+    margin-top: -40px;
+    height: 30px;
   }
 }

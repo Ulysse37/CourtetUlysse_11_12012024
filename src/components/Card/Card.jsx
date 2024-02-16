@@ -7,9 +7,9 @@ function Card({ id, title, cover }) {
     <Link to={`/Accomodation/${id}`} className='card'>
       <figure className='card-figure'>
         <img src={cover} alt={title} className='card-img'></img>
-        <div className='card-linear-gradient'>
-          <figcaption className='card-figcaption'>{title}</figcaption>
-        </div>
+        <figcaption className='card-linear-gradient'>
+          <p className='card-figcaption'>{title}</p>
+        </figcaption>
       </figure>
     </Link> 
   )

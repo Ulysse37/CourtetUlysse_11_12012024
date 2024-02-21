@@ -83,4 +83,7 @@ figure svg {
   .accomodation-title {
     max-width: 100%;
   }
+  .accomodation-collapse-container {
+    margin: 20px 20px;
+  }
 }

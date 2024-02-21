@@ -4,6 +4,12 @@
   --main-red: #ff6060;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
